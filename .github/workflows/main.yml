@@ -75,7 +75,7 @@ jobs:
         with:
           submodules: 'recursive'
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: 'docstrings'
           path: docstrings
@@ -121,7 +121,7 @@ jobs:
         with:
           submodules: 'recursive'
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: 'docstrings'
           path: docstrings
@@ -177,7 +177,7 @@ jobs:
         with:
           submodules: 'recursive'
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: 'docstrings'
           path: docstrings
@@ -241,7 +241,7 @@ jobs:
       - name: Create folder structure
         run: mkdir -p wheelhouse/audited/
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: 'docstrings'
           path: docstrings
@@ -303,7 +303,7 @@ jobs:
       - name: Create folder structure
         run: mkdir -p wheelhouse/audited/
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: 'docstrings'
           path: docstrings
@@ -384,7 +384,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: 'recursive'
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: audited-wheels
           path: wheelhouse/audited/
